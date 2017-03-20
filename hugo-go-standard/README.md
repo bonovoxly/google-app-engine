@@ -1,6 +1,6 @@
 # hugo-go webserver
 
-A very simple Go webserver.  Works great with Hugo sites.  http://test.billyc.io was deployed using it.
+A very simple Go webserver.  Works great with Hugo sites.
 
 For example, to deploy a Hugo generated blog:
 
@@ -8,7 +8,7 @@ For example, to deploy a Hugo generated blog:
 - Run the `hugo` command:
 
 ```
-cd /path/to/hugo
+cd /path/to/hugo/public
 ./hugo
 ```
 - Symlink whatever you're trying to deploy to `./public` (from this directory):
