@@ -1,0 +1,6 @@
+# directories to ignore
+static
+env
+lib
+# .pyc files
+*.pyc

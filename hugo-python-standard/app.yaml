@@ -1,0 +1,44 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /sitemap.xml
+  static_files: static/sitemap.xml
+  upload: static/sitemap.xml
+- url: /404.html
+  static_files: static/404.html
+  upload: static/404.html
+- url: /favicon.png
+  static_files: static/favicon.png
+  upload: static/favicon.png
+- url: /touch-icon-144-precomposed.png
+  static_files: static/touch-icon-144-precomposed.png
+  upload: static/touch-icon-144-precomposed.png
+- url: /css
+  static_dir: static/css
+  secure: always
+# if you have a custom theme, add it as a static dir.
+# - url: /css/bootswatch/YOURTHEME
+#   static_dir: static/css/bootswatch/YOURTHEME
+#   secure: always
+- url: /css/highlight
+  static_dir: static/css/highlight
+- url: /fonts
+  static_dir: static/fonts
+- url: /img
+  static_dir: static/img
+- url: /js
+  static_dir: static/js
+- url: /js/popover
+  static_dir: static/js/popover
+- url: /js/popover
+  static_dir: static/js/popover
+- url: /modal
+  static_dir: static/modal
+- url: .*
+  script: main.app
+# YOUR Google Analytics tracking ID and hostname
+env_variables:
+    GA_TRACKING_ID: ZZ-12345678-9
+    SITE_HOSTNAME: example.org
