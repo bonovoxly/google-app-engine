@@ -1,4 +1,4 @@
-# hugo-python-standard
+# hugo-google-analytics-standard
 
 A Hugo Google App Engine webserver, with the added twist of posting Google Analytics stats from the server side.
 
