@@ -22,6 +22,8 @@ env_variables:
 
 - This particular Google App Engine Standard is designed for use with a static site generator, specifically Hugo.  It will need a symlink to your static directory:
 
+(It is important to note that Python expects this to be in the `static` directory)
+
 ```
 ln -s /path/to/your/hugo/public static
 ```
