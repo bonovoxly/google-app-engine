@@ -7,4 +7,3 @@ import (
 func init() {
 	http.Handle("/", http.FileServer(http.Dir("public")))
 }
-
