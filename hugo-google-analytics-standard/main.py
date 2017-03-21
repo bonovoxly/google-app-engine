@@ -51,6 +51,7 @@ def track_event(category, action, label=None, value=0):
     }
     response = requests.post(
         'http://www.google-analytics.com/collect', data=data)
+    # should probably change this to https
     # If the request fails, this will raise a RequestException. Depending
     # on your application's needs, this may be a non-error and can be caught
     # by the caller.
