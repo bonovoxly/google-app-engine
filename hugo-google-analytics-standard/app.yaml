@@ -6,6 +6,9 @@ handlers:
 - url: /sitemap.xml
   static_files: static/sitemap.xml
   upload: static/sitemap.xml
+- url: /index.xml
+  static_files: static/index.xml
+  upload: static/index.xml
 - url: /404.html
   static_files: static/404.html
   upload: static/404.html
@@ -17,11 +20,9 @@ handlers:
   upload: static/touch-icon-144-precomposed.png
 - url: /css
   static_dir: static/css
-  secure: always
 # if you have a custom theme, add it as a static dir.
 # - url: /css/bootswatch/YOURTHEME
 #   static_dir: static/css/bootswatch/YOURTHEME
-#   secure: always
 - url: /css/highlight
   static_dir: static/css/highlight
 - url: /fonts
