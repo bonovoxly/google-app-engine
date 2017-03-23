@@ -28,6 +28,8 @@ import requests_toolbelt.adapters.appengine
 requests_toolbelt.adapters.appengine.monkeypatch()
 
 app = Flask(__name__)
+# still need to test this, but set this low to avoid caching of pages.
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 # Environment variables are defined in app.yaml.
 GA_TRACKING_ID = os.environ['GA_TRACKING_ID']
